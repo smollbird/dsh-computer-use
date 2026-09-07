@@ -75,16 +75,21 @@ const OUT = (extra = {}) => ({
 /** 图片块输出 schema 段（native 直读工具共用）。 */
 const IMAGE_FIELD = {
   image: {
-    type: 'object',
-    additionalProperties: false,
-    properties: {
-      attachmentId: { type: 'string', required: true },
-      mediaType: { type: 'string', enum: ['image/png', 'image/jpeg', 'image/webp', 'image/gif'], required: true },
-      bytes: { type: 'integer', required: true },
-      width: { oneOf: [{ type: 'integer' }, { type: 'null' }] },
-      height: { oneOf: [{ type: 'integer' }, { type: 'null' }] },
-      name: { type: 'string' },
-    },
+    oneOf: [
+      {
+        type: 'object',
+        additionalProperties: false,
+        properties: {
+          attachmentId: { type: 'string', required: true },
+          mediaType: { type: 'string', enum: ['image/png', 'image/jpeg', 'image/webp', 'image/gif'], required: true },
+          bytes: { type: 'integer', required: true },
+          width: { oneOf: [{ type: 'integer' }, { type: 'null' }] },
+          height: { oneOf: [{ type: 'integer' }, { type: 'null' }] },
+          name: { type: 'string' },
+        },
+      },
+      { type: 'null' },
+    ],
   },
 }
 

@@ -1,6 +1,6 @@
 # dsh-computer-use 验证报告（VERIFICATION）
 
-> 环境：macOS 15.6 (arm64) · harness-desktop（dsh 0.1.1-rc.2）· cua-driver 0.19.3
+> 环境：macOS 15.6 (arm64) · harness-desktop（dsh 0.1.2-rc.1）· cua-driver 0.21.0
 > 方法：隔离 profile（.dsh-p0）headless 实测，未改动真实 GUI 配置
 > 日期：2026-08-15
 

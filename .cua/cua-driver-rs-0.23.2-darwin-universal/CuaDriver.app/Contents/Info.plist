@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDisplayName</key>
+	<string>Cua Driver</string>
+	<key>CFBundleExecutable</key>
+	<string>cua-driver</string>
+	<key>CFBundleIconFile</key>
+	<string>AppIcon</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.trycua.driver</string>
+	<key>CFBundleName</key>
+	<string>Cua Driver</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>0.23.2</string>
+	<key>CFBundleVersion</key>
+	<string>0.23.2</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.0</string>
+	<key>LSUIElement</key>
+	<true/>
+	<key>NSAppleEventsUsageDescription</key>
+	<string>Cua Driver uses Automation only when a requested action needs to communicate with another app.</string>
+	<key>NSHighResolutionCapable</key>
+	<true/>
+	<key>NSScreenCaptureUsageDescription</key>
+	<string>Cua Driver captures the screen so agents can see and interact with the interface you ask them to control.</string>
+	<key>NSSupportsAutomaticTermination</key>
+	<true/>
+</dict>
+</plist>
